@@ -1,27 +1,32 @@
 {
-    "name": "loading-screen-simp-urmom-edition",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "dependencies": {
-        "sass": "^1.26.11",
-        "typescript": "^4.0.3"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-linux": "cp src bin && sass ./src:./bin && tsc",
-        "build-win": "copy src bin && sass ./src:./bin && tsc",
-        "watch-sass": "sass ./src:./bin --watch"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/0J3/Loading-Screen-Simp-UrMom-Edition.git"
-    },
-    "author": "0J3 & celestialcrafter",
-    "license": "LGPL-3.0-or-later",
-    "bugs": {
-        "url": "https://github.com/0J3/Loading-Screen-Simp-UrMom-Edition/issues"
-    },
-    "homepage": "https://github.com/0J3/Loading-Screen-Simp-UrMom-Edition#readme"
+  "name": "loading-screen-simp-urmom-edition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "npm-watch": "^0.7.0",
+    "sass": "^1.26.11",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {},
+  "watch": {
+    "build-win": "src/*.*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-linux": "cp src bin && sass ./src:./bin && tsc",
+    "build-win": "copy src bin && sass ./src:./bin && tsc",
+    "watch": "npm-watch",
+    "notice": "echo \"npm run watch\" ONLY WORKS UNDER WINDOWS!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0J3/Loading-Screen-Simp-UrMom-Edition.git"
+  },
+  "author": "0J3 & celestialcrafter",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/0J3/Loading-Screen-Simp-UrMom-Edition/issues"
+  },
+  "homepage": "https://github.com/0J3/Loading-Screen-Simp-UrMom-Edition#readme"
 }
