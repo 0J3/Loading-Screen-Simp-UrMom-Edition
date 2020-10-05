@@ -6,6 +6,6 @@
         "rootDir": "src",
         "outDir": "bin"
     },
-    "include": ["*", "src/index.ts"],
+    "include": ["src/*.ts"],
     "exclude": []
 }

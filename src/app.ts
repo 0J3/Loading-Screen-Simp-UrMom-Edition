@@ -1,3 +1,10 @@
+const template_upgradeString: string = `<div class="upgrade">
+  <img class="image" src="{{IMAGE_SRC}}" alt="{{TITLE}}" />
+  <h2 class="title">{{TITLE}}</h2>
+  <p class="description">{{DESCRIPTION}}</p>
+</div>`
+
+
 let upgrades: any = [];
 
 const addUpgrade = (data: {
@@ -30,6 +37,6 @@ class Upgrade {
 }
 
 $(()=>{
-  let x = document.getElementById("upgradeTemplate")?.firstChild
+  let x = 
   document.body.append(x)
 })
