@@ -23,5 +23,6 @@ var Upgrade = /** @class */ (function () {
 $(function () {
     var x = document.createElement("div");
     x.innerHTML = template_upgradeString;
+    x.className = "upgrade frame";
     document.body.append(x);
 });
