@@ -2,8 +2,10 @@
     "compileOnSave": true,
     "compilerOptions": {
         "noImplicitAny": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "rootDir": "src",
+        "outDir": "bin"
     },
-    "include": ["*"],
+    "include": ["*", "src/index.ts"],
     "exclude": []
 }
