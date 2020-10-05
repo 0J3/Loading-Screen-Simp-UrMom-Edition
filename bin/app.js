@@ -22,5 +22,6 @@ var Upgrade = /** @class */ (function () {
 }());
 $(function () {
     var x = document.createElement("div");
+    x.outerHTML = template_upgradeString;
     document.body.append(x);
 });

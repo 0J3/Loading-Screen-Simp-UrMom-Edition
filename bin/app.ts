@@ -38,6 +38,6 @@ class Upgrade {
 
 $(()=>{
   let x = document.createElement("div")
-  x.outerHTML=template_upgradeString
+  x.innerHTML=template_upgradeString
   document.body.append(x)
 })
