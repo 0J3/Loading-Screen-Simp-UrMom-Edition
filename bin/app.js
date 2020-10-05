@@ -21,5 +21,6 @@ var Upgrade = /** @class */ (function () {
     return Upgrade;
 }());
 $(function () {
-    var x = document.body.append(x);
+    var x = document.createElement("div");
+    document.body.append(x);
 });
