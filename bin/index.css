@@ -5,4 +5,9 @@ html {
   min-width: 100vw;
 }
 
+.upgrade {
+  border-color: #1a1a1a;
+  background: #1a1a1a;
+}
+
 /*# sourceMappingURL=index.css.map */

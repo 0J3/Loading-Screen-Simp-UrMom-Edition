@@ -1,7 +1,7 @@
 let upgrades: any = [];
 
 const addUpgrade = (data: {
-  cost: number; image: string; name: string
+  cost: number;image: string;name: string
 }) => {
   let data2 = {
     cost: data.cost,
@@ -16,7 +16,7 @@ const addUpgrade = (data: {
 
 class Upgrade {
   constructor(data: {
-    cost: number; image: string; name: string; id: number
+    cost: number;image: string;name: string;id: number
   }) {
     this.data = data;
     this.name = data.name;
@@ -28,3 +28,7 @@ class Upgrade {
   image: string;
   buy: {};
 }
+
+$(()=>{
+  
+})

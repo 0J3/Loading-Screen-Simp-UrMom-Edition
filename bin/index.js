@@ -19,3 +19,5 @@ var Upgrade = /** @class */ (function () {
     }
     return Upgrade;
 }());
+$(function () {
+});
