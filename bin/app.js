@@ -1,4 +1,4 @@
-var template_upgradeString = "<div class=\"upgrade\">\n  <img class=\"image\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" />\n  <h2 class=\"title\">{{TITLE}}</h2>\n  <p class=\"description\">{{DESCRIPTION}}</p>\n</div>";
+var template_upgradeString = "<img class=\"image\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" />\n<h2 class=\"title\">{{TITLE}}</h2>\n<p class=\"description\">{{DESCRIPTION}}</p>";
 var upgrades = [];
 var addUpgrade = function (data) {
     var data2 = {
@@ -22,6 +22,6 @@ var Upgrade = /** @class */ (function () {
 }());
 $(function () {
     var x = document.createElement("div");
-    x.outerHTML = template_upgradeString;
+    x.innerHTML = template_upgradeString;
     document.body.append(x);
 });

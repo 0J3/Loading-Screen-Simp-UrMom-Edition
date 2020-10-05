@@ -1,8 +1,6 @@
-const template_upgradeString: string = `<div class="upgrade">
-  <img class="image" src="{{IMAGE_SRC}}" alt="{{TITLE}}" />
-  <h2 class="title">{{TITLE}}</h2>
-  <p class="description">{{DESCRIPTION}}</p>
-</div>`
+const template_upgradeString: string = `<img class="image" src="{{IMAGE_SRC}}" alt="{{TITLE}}" />
+<h2 class="title">{{TITLE}}</h2>
+<p class="description">{{DESCRIPTION}}</p>`
 
 
 let upgrades: any = [];
@@ -39,5 +37,6 @@ class Upgrade {
 $(()=>{
   let x = document.createElement("div")
   x.innerHTML=template_upgradeString
+  x.className="upgrade frame"
   document.body.append(x)
 })
