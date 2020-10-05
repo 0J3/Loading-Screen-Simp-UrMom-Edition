@@ -30,5 +30,6 @@ class Upgrade {
 }
 
 $(()=>{
-
+  let x = document.getElementById("upgradeTemplate")?.firstChild
+  document.body.append(x)
 })
