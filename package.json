@@ -10,7 +10,8 @@
     "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "sass ./src:./bin && tsc",
+        "build-linux": "cp src bin && sass ./src:./bin && tsc",
+        "build-win": "copy src bin && sass ./src:./bin && tsc",
         "watch-sass": "sass ./src:./bin --watch"
     },
     "repository": {
