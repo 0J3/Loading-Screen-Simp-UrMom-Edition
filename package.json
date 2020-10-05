@@ -10,8 +10,8 @@
     "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "sass src:bin && tsc",
-        "watch-sass": "sass --watch src:bin"
+        "build": "sass .:. && tsc",
+        "watch-sass": "sass .:. --watch"
     },
     "repository": {
         "type": "git",
