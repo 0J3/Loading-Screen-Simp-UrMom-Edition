@@ -3,15 +3,11 @@ const template_upgradeString: string = `<td style='padding: 10px;'></td><td clas
 let upgrades: any = [];
 
 const addUpgrade = (data: { cost: number; image: string; name: string }) => {
-  let data2 = {
-    cost: data.cost,
-    image: data.image,
-    name: data.name,
-    id: 0
-  };
-  data2.name = name;
-  data2.id = upgrades.length - 1;
-  upgrades[data2.id] = new Upgrade(data2);
+  const id = upgrades.length - 1;
+  upgrades[id] = new Upgrade({
+    ...data,
+    id
+  });
 };
 
 class Upgrade {

@@ -15,8 +15,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-linux": "cp src bin && sass ./src:./bin && tsc && cd bin && rm *.ts && rm *.scss",
-    "build-win": "copy src bin && sass ./src:./bin && tsc && cd bin && del *.ts && del *.scss",
+    "build-linux": "cp src bin; sass ./src:./bin; tsc; cd bin; rm *.ts; rm *.scss; node postbuild.js",
+    "build-win": "copy src bin && sass ./src:./bin && tsc && cd bin && del *.ts && del *.scss && node postbuild.js",
     "watch": "npm-watch",
     "notice": "echo \"npm run watch\" ONLY WORKS UNDER WINDOWS!"
   },
