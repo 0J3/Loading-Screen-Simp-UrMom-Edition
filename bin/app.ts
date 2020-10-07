@@ -4,25 +4,21 @@ const template_upgradeString: string = `
 <td class="title">{{TITLE}}</td>
 <td class="description">{{DESCRIPTION}}</td>
 <td class="cost">{{COST}}</td>
-<td>
-  <a class="btn-floating btn-large waves-effect waves-light green">
-    <i class="material-icons">shopping_cart</i>
-  </a>
-</td>
-<td style='padding: 10px;'></td>
+<td><a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a></td><td style='padding: 10px;'></td>
 `;
 
-const addUpgradeFrame = (name: string, cost: number | string | undefined = 0, description: string | undefined = "No Description Specified", image: string | undefined = "https://via.placeholder.com/2069x2069") => {
+const addUpgradeFrame = (name:string, description: string|undefined="No Description Specified", image:string|undefined="https://via.placeholder.com/2069x2069") => {
   const frame = document.createElement('tr');
   let upgradeString = template_upgradeString;
-  const remove = (a: string, b: string) => upgradeString = upgradeString.split(a).join(b);
+  const x = (a:string,b:string)=>{
+    upgradeString=upgradeString.split(a).join(b);
+  }
 
-  cost = Number(cost)
+  description=description||"No Description Specified"
+  image=image||"https://via.placeholder.com/2069x2069"
 
-  remove("{{TITLE}}", name)
-  remove("{{DESCRIPTION}}", description)
-  remove("{{COST}}", cost.toString())
-  remove("{{IMAGE_SRC}}", image)
+  x("{{TITLE}}", name)
+  x("{{DESCRIPTION}}", description)
 
   frame.innerHTML = upgradeString;
   frame.className = 'upgrade frame';

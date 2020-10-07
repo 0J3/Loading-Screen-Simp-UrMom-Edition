@@ -5,20 +5,24 @@
   "main": "index.js",
   "dependencies": {
     "@types/jquery": "^3.5.1",
+    "@types/node": "^14.11.5",
     "npm-watch": "^0.7.0",
     "sass": "^1.26.11",
     "typescript": "^4.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "esformatter": "^0.11.3"
+  },
   "watch": {
     "build-win": "src/*.*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-linux": "cp src bin; sass ./src:./bin; tsc; cd bin; rm *.ts; rm *.scss; node postbuild.js",
-    "build-win": "copy src bin && sass ./src:./bin && tsc && cd bin && del *.ts && del *.scss && node postbuild.js",
+    "build-linux": "cp src bin; sass ./src:./bin; tsc; node ./postbuild.js",
+    "build-win": "copy src bin && sass ./src:./bin && tsc && node ./postbuild.js",
     "watch": "npm-watch",
-    "notice": "echo \"npm run watch\" ONLY WORKS UNDER WINDOWS!"
+    "notice": "echo \"npm run watch\" ONLY WORKS UNDER WINDOWS!",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
