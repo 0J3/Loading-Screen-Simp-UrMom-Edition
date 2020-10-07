@@ -1,4 +1,4 @@
-var template_upgradeString = "<img class=\"image\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" />\n<h2 class=\"title\">{{TITLE}}</h2>\n<p class=\"description\">{{DESCRIPTION}}</p>";
+var template_upgradeString = "<img class=\"image\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" /><h2 class=\"title\">{{TITLE}}</h2><p class=\"description\">{{DESCRIPTION}}</p>";
 var upgrades = [];
 var addUpgrade = function (data) {
     var data2 = {

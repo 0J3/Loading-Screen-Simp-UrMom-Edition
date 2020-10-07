@@ -1,6 +1,4 @@
-const template_upgradeString: string = `<img class="image" src="{{IMAGE_SRC}}" alt="{{TITLE}}" />
-<h2 class="title">{{TITLE}}</h2>
-<p class="description">{{DESCRIPTION}}</p>`
+const template_upgradeString: string = `<img class="image" src="{{IMAGE_SRC}}" alt="{{TITLE}}" /><h2 class="title">{{TITLE}}</h2><p class="description">{{DESCRIPTION}}</p>`
 
 
 let upgrades: any = [];

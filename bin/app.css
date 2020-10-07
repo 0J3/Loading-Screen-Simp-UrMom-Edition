@@ -5,20 +5,22 @@ html {
   min-width: 100vw;
 }
 
-.upgrade {
+.upgrade.frame {
   display: flex;
   border-color: #1a1a1a;
   background: #1a1a1a;
+  color: #ffffff;
 }
-
-.upgrade .image {
+.upgrade.frame .image {
   width: 100%;
   height: 100%;
 }
-
-.upgrade .title {
+.upgrade.frame .title {
   width: 100%;
   height: 100%;
+}
+.upgrade.frame .description {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=app.css.map */

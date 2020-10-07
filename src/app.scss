@@ -5,18 +5,22 @@ html {
   min-width: 100vw;
 }
 
-.upgrade {
+.upgrade.frame {
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    width: 100%;
+    height: 100%;
+  }
+  .description{
+    font-size: 1em;
+  }
+
   display: flex;
   border-color: #1a1a1a;
   background: #1a1a1a;
-}
-
-.upgrade .image {
-  width: 100%;
-  height: 100%;
-}
-
-.upgrade .title {
-  width: 100%;
-  height: 100%;
+  color: #ffffff;
 }
