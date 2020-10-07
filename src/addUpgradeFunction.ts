@@ -23,6 +23,6 @@ class Upgrade {
 
 module.exports = addUpgrade;
 
-module.exports.getUpgrades = ()=>{
-  return upgrades
-}
+module.exports.getUpgrades = () => {
+  return upgrades;
+};

@@ -1,16 +1,17 @@
-.upgrade.window{
+.upgrade.window {
   display: none;
   z-index: 10000;
 }
 
-.displayUpgrades .upgrade.window, .absoluteCenter{
+.displayUpgrades .upgrade.window,
+.absoluteCenter {
   display: table;
   position: fixed;
   margin: 0;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .upgrade.frame {

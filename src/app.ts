@@ -12,34 +12,36 @@ const template_upgradeString: string = `
 <td style='padding: 10px;'></td>
 `;
 
-const addUpgradeFrame = (name: string, cost: number | string | undefined = 0, description: string | undefined = "No Description Specified", image: string | undefined = "https://via.placeholder.com/2069x2069") => {
+const addUpgradeFrame = (
+  name: string,
+  cost: number | string | undefined = 0,
+  description: string | undefined = 'No Description Specified',
+  image: string | undefined = 'https://via.placeholder.com/2069x2069'
+) => {
   const frame = document.createElement('tr');
   let upgradeString = template_upgradeString;
-  const remove = (a: string, b: string) => upgradeString = upgradeString.split(a).join(b);
+  const remove = (a: string, b: string) =>
+    (upgradeString = upgradeString.split(a).join(b));
 
-  cost = Number(cost)
+  cost = Number(cost);
 
-  remove("{{TITLE}}", name)
-  remove("{{DESCRIPTION}}", description)
-  remove("{{COST}}", cost.toString())
-  remove("{{IMAGE_SRC}}", image)
+  remove('{{TITLE}}', name);
+  remove('{{DESCRIPTION}}', description);
+  remove('{{COST}}', cost.toString());
+  remove('{{IMAGE_SRC}}', image);
 
   frame.innerHTML = upgradeString;
   frame.className = 'upgrade frame';
   $('#upgradetable').append(frame);
 
   return;
-}
+};
 
 $(() => {
-  const _upgrades = require("./addUpgradeFunction")
-  const getUpgrades = _upgrades.getUpgrades
+  const _upgrades = require('./addUpgradeFunction');
+  const getUpgrades = _upgrades.getUpgrades;
 
+  _upgrades.upgradeAdded(upgrade => {});
 
-  _upgrades.upgradeAdded((upgrade) => {
-
-  })
-
-
-  _upgrades.ready()
+  _upgrades.ready();
 });
