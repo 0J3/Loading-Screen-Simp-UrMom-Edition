@@ -21,8 +21,8 @@ var Upgrade = /** @class */ (function () {
     return Upgrade;
 }());
 $(function () {
-    var x = document.createElement("tr");
+    var x = document.createElement('tr');
     x.innerHTML = template_upgradeString;
-    x.className = "upgrade frame";
-    $("#upgradetable").append(x);
+    x.className = 'upgrade frame';
+    $('#upgradetable').append(x);
 });

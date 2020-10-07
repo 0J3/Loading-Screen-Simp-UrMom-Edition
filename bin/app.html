@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Simulator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loading Simulator</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="app.css" />
-</head>
-
-<body class="displayUpgrades">
-  <div>
-    <a class="waves-effect waves-light btn" style="position: fixed; top:5px; left:5px;">Get Money</a>
-    <a class="btn-floating btn-large waves-effect waves-light red" style="position: fixed; right:5px; bottom:5px;"><i class="material-icons">add</i></a>
-    <div class="input-field col s12 moneyContainer">
-      <input id="moneyCount" class="moneyEl moneyIn" id="disabled" type="text" pattern=""/>
-      <p class="moneyEl template">Waiting for money...&nbsp;</p>
+  <body class="displayUpgrades">
+    <div>
+      <a
+        class="waves-effect waves-light btn"
+        style="position: fixed; top:5px; left:5px;"
+        >Get Money</a
+      >
+      <a
+        class="btn-floating btn-large waves-effect waves-light red"
+        style="position: fixed; right:5px; bottom:5px;"
+        ><i class="material-icons">add</i></a
+      >
+      <div class="input-field col s12 moneyContainer">
+        <input
+          id="moneyCount"
+          class="moneyEl moneyIn"
+          id="disabled"
+          type="text"
+          pattern=""
+        />
+        <p class="moneyEl template">Waiting for money...&nbsp;</p>
+      </div>
     </div>
-  </div>
-  <div id="upgradewin" class="upgrade window">
-    <table id="upgradetable">
-      <tr>
-        <th>&nbsp;&nbsp;&ZeroWidthSpace;</th>
-        <th>Icon</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Buy</th>
-        <th>&ZeroWidthSpace;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-      </tr>
-    </table>
-  </div>
-  <div class="gap-patch">
-    <div class="circle"></div>
-  </div>
-</body>
-
+    <div id="upgradewin" class="upgrade window">
+      <table id="upgradetable">
+        <tr>
+          <th style="padding: 10px;"></th>
+          <th>Icon</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Buy</th>
+          <th style="padding: 10px;"></th>
+        </tr>
+      </table>
+    </div>
+    <div class="gap-patch">
+      <div class="circle"></div>
+    </div>
+  </body>
 </html>
