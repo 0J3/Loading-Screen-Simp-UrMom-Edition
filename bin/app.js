@@ -1,4 +1,4 @@
-var template_upgradeString = "<td>&nbsp;&nbsp;&ZeroWidthSpace;</td><td class=\"image circle responsive-img\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" /><td class=\"title\">{{TITLE}}</td><td class=\"description\">{{DESCRIPTION}}</td><td><a class=\"btn-floating btn-large waves-effect waves-light green\"><i class=\"material-icons\">shopping_cart</i></a></td><td>&ZeroWidthSpace;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>";
+var template_upgradeString = "<td style='padding: 10px;'></td><td class=\"image circle responsive-img\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" /><td class=\"title\">{{TITLE}}</td><td class=\"description\">{{DESCRIPTION}}</td><td><a class=\"btn-floating btn-large waves-effect waves-light green\"><i class=\"material-icons\">shopping_cart</i></a></td><td style='padding: 10px;'></td>";
 var upgrades = [];
 var addUpgrade = function (data) {
     var data2 = {
