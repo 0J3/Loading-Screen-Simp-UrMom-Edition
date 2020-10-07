@@ -1,4 +1,4 @@
-var template_upgradeString = "<img class=\"image\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" /><h2 class=\"title\">{{TITLE}}</h2><p class=\"description\">{{DESCRIPTION}}</p>";
+var template_upgradeString = "<td>&nbsp;&nbsp;&ZeroWidthSpace;</td><td class=\"image circle responsive-img\" src=\"{{IMAGE_SRC}}\" alt=\"{{TITLE}}\" /><td class=\"title\">{{TITLE}}</td><td class=\"description\">{{DESCRIPTION}}</td><td><a class=\"btn-floating btn-large waves-effect waves-light green\"><i class=\"material-icons\">shopping_cart</i></a></td><td>&ZeroWidthSpace;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>";
 var upgrades = [];
 var addUpgrade = function (data) {
     var data2 = {
@@ -21,8 +21,8 @@ var Upgrade = /** @class */ (function () {
     return Upgrade;
 }());
 $(function () {
-    var x = document.createElement("div");
+    var x = document.createElement("tr");
     x.innerHTML = template_upgradeString;
     x.className = "upgrade frame";
-    document.body.append(x);
+    $("#upgradetable").append(x);
 });

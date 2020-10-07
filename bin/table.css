@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 10px 10px #2a2b2c66;
+  background: #11111122;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #1d1d1d22;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*# sourceMappingURL=table.css.map */
