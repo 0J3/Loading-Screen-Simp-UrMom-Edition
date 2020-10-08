@@ -41,7 +41,7 @@ $(() => {
   const _upgrades = require('./addUpgradeFunction');
   const getUpgrades = _upgrades.getUpgrades;
 
-  _upgrades.upgradeAdded(upgrade => {});
+  _upgrades.upgradeAdded((upgrade: object) => {});
 
   _upgrades.ready();
 });

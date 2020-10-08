@@ -1,7 +1,7 @@
 .moneyContainer *,
 .moneyContainer,
 .moneyEl,
-.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl {
+.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl.moneyEl {
   width: 10vw;
   min-width: max-content;
   position: fixed;
@@ -20,6 +20,7 @@
 .moneyEl.template {
   pointer-events: none;
 }
+
 .moneyIn {
   color: #cccccc;
   font-weight: 100;
@@ -27,6 +28,6 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.moneyIn:not(:valid) + .template {
+.moneyIn:not(:valid)+.template {
   display: none;
 }

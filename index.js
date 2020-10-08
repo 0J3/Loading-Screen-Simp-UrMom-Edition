@@ -5,13 +5,13 @@ const {
 
 app.on("ready", () => {
   let win = new BrowserWindow({
-    backgroundColor: '#2e2c29',
-    show: false,
-    
+    backgroundColor: '#1a1a1a',
+    frame: false,
+    transparent: true
   })
 
   win.once('ready-to-show', () => {
-    win.loadURL('https://github.com')
+    win.loadUrl("file://"+__dirname+"test.html")
   })
 })
 

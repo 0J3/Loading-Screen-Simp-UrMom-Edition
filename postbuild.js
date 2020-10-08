@@ -21,11 +21,16 @@ setTimeout(() => {
     }
   };
 
-  const files = fs.readdirSync("./src/");
+  const p = "./src/"
+
+  const files = fs.readdirSync(p);
 
   files.forEach(file => {
-    
+    const codeStr=fs.readFileSync(p+file).toString("utf-8")
+
     const formattedCode = esformatter.format(codeStr, options);
+    
+    writeFileSync(p+file,formattedCode)
   })
 }, 0)
 
